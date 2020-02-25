@@ -1,0 +1,21 @@
+Bootstrap: docker
+From: conda/miniconda2
+
+%post
+    apt update
+    apt upgrade -y
+    apt install -y python3 python3-pip libgl1-mesa-glx
+    # install quick pyhton tools
+    pip3 install pyfaidx
+    pip3 install ncbi-genome-download
+
+    # update conda
+    conda update -n base -c defaults conda
+    # install ete3 as its usefull to have in such a container
+    conda install -c etetoolkit ete3 ete_toolchain pyqt>5
+    # install basic bioinfo tools
+    conda install -c bioconda samtools minimap2 bwa bedtools
+
+%environment
+    export LC_ALL=C
+
