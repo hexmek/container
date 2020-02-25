@@ -14,7 +14,7 @@ From: conda/miniconda2
     # install ete3 as its usefull to have in such a container
     conda install -c etetoolkit ete3 ete_toolchain pyqt>5
     # install basic bioinfo tools
-    conda install -c bioconda samtools minimap2 bwa bedtools
+    conda install -c bioconda samtools minimap2 bwa bedtools mash mummer
 
 %environment
     export LC_ALL=C
