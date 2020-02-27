@@ -14,6 +14,12 @@ MirrorURL: http://httpredir.debian.org/debian
     mv CAT-5.0.3/* .
     mv CAT_pack/* .
 
+    # diamond
+    cd /opt
+    wget https://github.com/bbuchfink/diamond/releases/download/v0.9.30/diamond-linux64.tar.gz
+    tar xzvf diamond-linux64.tar.gz
+    mv diamond /usr/bin/
+
 
 %environment
     export LC_ALL=C     
