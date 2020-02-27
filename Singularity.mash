@@ -6,7 +6,7 @@ MirrorURL: http://httpredir.debian.org/debian
 %post
     apt update
     apt upgrade -y
-    apt install -y make cmake g++ wget curl 
+    apt install -y make cmake g++ wget curl  procps
     mkdir /opt/mash
     cd /opt/mash
     wget -O mash.tar https://github.com/marbl/Mash/releases/download/v2.2/mash-Linux64-v2.2.tar

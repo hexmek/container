@@ -5,7 +5,7 @@ From: conda/miniconda2
 %post
     apt update -y
     apt upgrade -y
-    apt install -y wget build-essential libgsl0-dev git zip unzip bedtools python-pip samtools tar
+    apt install -y wget build-essential libgsl0-dev git zip unzip bedtools python-pip samtools tar procps
     #echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
     #echo "source activate base" > ~/.bashrc
     # Note: ordering is important
