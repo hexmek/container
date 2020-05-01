@@ -11,6 +11,9 @@ From: conda/miniconda2
     cd ncbi-genome-download
     git checkout na_fix
     pip install .
+    
+    # install memory profiler, because why not
+    pip install memory-profiler
 
 
 %environment
