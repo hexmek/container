@@ -3,6 +3,7 @@ From: conda/miniconda2
 
 
 %post
+    apt install -y procps
     
     conda install -c bioconda spades=3.13
 
