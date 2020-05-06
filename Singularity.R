@@ -3,7 +3,7 @@ From: r-base:3.6.1
 
 %post
     apt update 
-    apt upgarde -y
+    apt upgrade -y
     apt install -y procps
     # install all CRAN packages and biocondocutor we need
     echo '''
