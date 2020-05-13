@@ -1,0 +1,9 @@
+Bootstrap: docker
+From: ezlabgva/busco:v4.0.6_cv1
+
+    
+
+
+%environment
+    export LC_ALL=C
+
