@@ -1,0 +1,27 @@
+Bootstrap: debootstrap
+OSVersion: stable
+MirrorURL: http://httpredir.debian.org/debian
+
+
+%post
+    apt update
+    apt upgrade -y
+    apt install -y make cmake g++ wget curl \
+        git \
+        libbz2-dev liblzma-dev \
+        procps \
+        python3 \
+        procps  python3-pip \
+        python3-dev build-essential wget bzip2 libz-dev
+    update-alternatives --install /usr/bin/python python $(which python3) 1
+    pip3 install Cython
+
+    cd /opt
+    git clone https://github.com/SegataLab/cmseq
+    cd cmseq
+    pip3 install .
+
+
+%environment
+    export LC_ALL=C
+
