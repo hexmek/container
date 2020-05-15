@@ -4,6 +4,7 @@ From: conda/miniconda2
 %post
     apt update
     apt upgrade -y
+    apt install -y procps 
     conda install -c bioconda bbmap 
 
 
