@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: conda/miniconda2
+
+%post
+    apt update
+    apt upgrade -y
+    conda install -c bioconda bbmap 
+
+
+
+%environment
+    export LC_ALL=C
+
