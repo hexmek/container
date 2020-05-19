@@ -1,0 +1,17 @@
+Bootstrap: docker
+From: conda/miniconda3
+
+
+%post
+    apt update
+    apt upgrade -y
+    apt dist-upgrade
+    apt install -y  make gcc procps
+
+    conda update --all
+    conda install -c bioconda bamm
+
+
+%environment
+    export LC_ALL=C     
+
