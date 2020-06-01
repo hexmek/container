@@ -6,10 +6,10 @@ From: conda/miniconda3
     apt update
     apt upgrade -y
     apt dist-upgrade
-    apt install -y  make gcc procps
+    apt install -y  make gcc procps samtools
 
     conda update --all
-    conda install -c bioconda bamm
+    conda install -c bioconda bamm samtools
 
 
 %environment
