@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: python:3
+
+%help
+a simple python3 container with only ete3 and six installed
+
+%post
+    pip install ete3 six
+
+
+
+%environment
+    export LC_ALL=C
+
