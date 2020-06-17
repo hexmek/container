@@ -44,11 +44,11 @@ PIPES=/usr/local/bin/metawrap-modules
 KRAKEN_DB=/path/to/database
 
 # path to indexed human genome (see metaWRAP website for guide). This includes files hg38.bitmask and hg38.srprism.*
-BMTAGGER_DB=/hps/nobackup2/production/metagenomics/saary/databases/bmtagger/
+BMTAGGER_DB=/hps/research/finn/saary/database/metawrap/bmtagger
 
 # paths to BLAST databases
 BLASTDB=/path/to/database/NCBI_nt
-TAXDUMP=/hps/nobackup2/production/metagenomics/saary/databases/NCBI_tax""" > $CONFFILE
+TAXDUMP=/hps/research/finn/saary/database/metawrap/NCBI_tax""" > $CONFFILE
 
 %environment
     export LC_ALL=C     
