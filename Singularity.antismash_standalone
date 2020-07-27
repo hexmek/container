@@ -2,6 +2,8 @@ Bootstrap: docker
 From: antismash/standalone:5.1.1
 
 %post
+    apt update
+    apt install wget
     echo "hotfix"
     cd /usr/local/lib/python3.5/dist-packages/antismash/modules/nrps_pks/
     wget -O smiles_generator.py https://raw.githubusercontent.com/openpaul/antismash/smiles_utf8_bug/antismash/modules/nrps_pks/smiles_generator.py
