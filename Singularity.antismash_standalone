@@ -3,6 +3,7 @@ From: antismash/standalone:5.1.1
 
 %post
     apt update
+    apt upgrade -y
     apt install wget
     echo "hotfix"
     cd /usr/local/lib/python3.5/dist-packages/antismash/modules/nrps_pks/
