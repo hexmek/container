@@ -13,9 +13,17 @@ MirrorURL: http://httpredir.debian.org/debian
         python3 \
         procps  python3-pip \
         python3-dev build-essential wget bzip2 libz-dev
+    apt install -y python3 python3-pip libgl1-mesa-glx rsync git curl wget bwa \
+                   bedtools samtools procps make gcc zlib1g-dev libbz2-dev \
+                    liblzma-dev
     update-alternatives --install /usr/bin/python python $(which python3) 1
+    # install quick pyhton tools
     pip3 install Cython
-
+    pip3 install pysam
+    pip3 install pyfaidx
+    pip3 install ncbi-genome-download
+    pip3 install biopython
+    # cmseq
     cd /opt
     git clone https://github.com/SegataLab/cmseq
     cd cmseq
