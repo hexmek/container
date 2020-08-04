@@ -7,6 +7,16 @@ From: conda/miniconda3
     apt upgrade -y
     apt dist-upgrade
     apt install -y  make gcc procps samtools
+    apt install -y python3 python3-pip libgl1-mesa-glx rsync git curl wget bwa \
+                   bedtools samtools procps make gcc zlib1g-dev libbz2-dev \
+                    liblzma-dev
+    update-alternatives --install /usr/bin/python python $(which python3) 1
+    # install quick pyhton tools
+    pip3 install Cython
+    pip3 install pysam
+    pip3 install pyfaidx
+    pip3 install ncbi-genome-download
+    pip3 install biopython
 
     conda update --all
     conda install -c bioconda bamm samtools
