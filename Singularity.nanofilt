@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: conda/miniconda2
+From: conda/miniconda3
 
 %post
     apt update
