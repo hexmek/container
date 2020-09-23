@@ -17,9 +17,9 @@ MirrorURL: http://httpredir.debian.org/debian
     cd /
     mkdir -p /opt/
     cd /opt/
-    #git clone https://github.com/diriano/ploidyNGS.git
-    #cd ploidyNGS 
-    #chmod +x *.py
+    git clone https://github.com/diriano/ploidyNGS.git
+    cd ploidyNGS 
+    chmod +x *.py
     
 
 %environment
