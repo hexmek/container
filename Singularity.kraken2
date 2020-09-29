@@ -4,12 +4,16 @@ From: conda/miniconda3
 %post
     apt update
     apt upgrade -y
-    apt install -y python3 python3-pip libgl1-mesa-glx rsync git curl wget bwa \
-                   bedtools samtools procps make gcc
+    apt install -y procps  make git gcc g++ perl rsync
+    #conda install -c bioconda -c conda-forge kraken2 libiconv 
 
+    cd /opt
+    git clone https://github.com/DerrickWood/kraken2
+    cd kraken2
+    bash install_kraken2.sh /opt/kraken2_install
 
-    conda install -c bioconda kraken2
 
 %environment
     export LC_ALL=C
+    export PATH="/opt/kraken2_install:$PATH"
 
