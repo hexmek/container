@@ -14,7 +14,7 @@ From: conda/miniconda2
     conda config --add channels bioconda
     conda config --add channels ursky
 
-    conda install -y -c ursky metawrap-mg=1.2.3
+    conda install -y -c ursky metawrap-mg=1.3.1
     # Note: may take a while
 
     #conda install -c bioconda concoct
