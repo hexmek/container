@@ -6,7 +6,7 @@ From: conda/miniconda3
     apt upgrade -y
     apt install -y git curl wget  procps make gcc
 
-    conda install -c bioconda repeatmasker 
+    conda install -c bioconda -c conda-forge repeatmasker 
 
 %environment
     export LC_ALL=C
