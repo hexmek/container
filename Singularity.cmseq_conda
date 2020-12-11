@@ -4,18 +4,13 @@ From: conda/miniconda3
     apt update -y
     apt upgrade -y
     apt install -y wget build-essential libgsl0-dev git zip unzip python-pip tar procps
-    #echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
-    #echo "source activate base" > ~/.bashrc
-    # Note: ordering is important
 
     conda config --add channels conda-forge
     conda config --add channels bioconda
     conda config --add channels defaults
     conda config --add channels bioconda
     conda config --add channels biobakery
-
     conda install cmseq bowtie2 bwa
-    conda install -c bioconda samtools openssl=1.0
 
 
 %environment
