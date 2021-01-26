@@ -9,6 +9,7 @@ MirrorURL: http://httpredir.debian.org/debian
     apt install -y make cmake g++ wget curl  zip python3 \
             prodigal procps python3-pip 
 
+    pip3 install scikit-learn
     pip3 install EukRep
 
     mkdir /opt/CAT
