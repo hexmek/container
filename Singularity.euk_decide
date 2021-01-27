@@ -7,7 +7,8 @@ From: conda/miniconda3
     apt install -y make cmake g++ wget curl  zip python3 \
             prodigal procps python3-pip 
 
-    conda install -c conda-forge -c anaconda -c bioconda mamba python=3.7.6 eukrep  scikit-learn 
+    conda install -c conda-forge -c anaconda -c bioconda mamba python=3.7.6 eukrep  \
+        scikit-learn==0.22.1
 
     mkdir /opt/CAT
     cd /opt/CAT
