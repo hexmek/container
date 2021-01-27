@@ -1,7 +1,5 @@
-Bootstrap: debootstrap
-OSVersion: testing
-MirrorURL: http://httpredir.debian.org/debian
-
+Bootstrap: docker
+From: conda/miniconda3
 
 %post
     apt update
@@ -9,8 +7,7 @@ MirrorURL: http://httpredir.debian.org/debian
     apt install -y make cmake g++ wget curl  zip python3 \
             prodigal procps python3-pip 
 
-    pip3 install scikit-learn
-    pip3 install EukRep
+    conda install -c conda-forge -c anaconda -c bioconda mamba python=3.7.6 eukrep  scikit-learn 
 
     mkdir /opt/CAT
     cd /opt/CAT
