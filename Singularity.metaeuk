@@ -9,7 +9,7 @@ From: conda/miniconda3
     apt install -y  make gcc procps samtools python3 python3-pip libgl1-mesa-glx rsync git curl wget bwa \
                    bedtools zlib1g-dev libbz2-dev liblzma-dev
 
-    conda install -c conda-forge -c bioconda metaeuk
+    conda install -c conda-forge -c bioconda 'metaeuk==v4.a0f584d'
 
 %environment
     export LC_ALL=C     
