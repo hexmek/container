@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ezlabgva/busco:v5.0.0_cv
+From: ezlabgva/busco:v5.0.0_cv1
 
 %post 
     echo "done"
