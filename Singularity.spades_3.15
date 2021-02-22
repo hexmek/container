@@ -14,11 +14,11 @@ MirrorURL: http://httpredir.debian.org/debian
     update-alternatives --install /usr/bin/python python $(which python3) 1
 
     cd /opt
-    wget -O spades.tar.gz http://cab.spbu.ru/files/release3.15.0/SPAdes-3.15.0-Linux.tar.gz
+    wget -O spades.tar.gz http://cab.spbu.ru/files/release3.15.0/SPAdes-3.15.1-Linux.tar.gz
     tar xzvf spades.tar.gz
     
 
 %environment
     export LC_ALL=C     
-    export PATH="/opt/SPAdes-3.15.0-Linux/bin:$PATH"
+    export PATH="/opt/SPAdes-3.15.1-Linux/bin:$PATH"
 
