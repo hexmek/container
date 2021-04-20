@@ -3,12 +3,8 @@ From: conda/miniconda3
 
 %post
     apt update
-    apt upgrade -y
     apt install -y git curl wget  procps make gcc parallel
-    conda install -c conda-forge mamba python=3.7
-
-    mamba install -c conda-forge -c bioconda "samtools>=1.8" pysam 
-    mamba install -c bioconda minimap2 bwa python=3.7 bedtools art
+    conda install -c conda-forge -c bioconda art bwa samtools
 
 %environment
     export LC_ALL=C
